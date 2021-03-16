@@ -12,5 +12,5 @@ Handling of pull requests with more than 250 commits is not implemented (https:/
 
 ### Run
 
-`bundle install`
-`ruby app.rb`
+- `bundle install`
+- `ruby app.rb`
