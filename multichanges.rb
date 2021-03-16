@@ -1,17 +1,13 @@
 # frozen_string_literal: true
 
+require 'cgi'
+require 'json'
+require 'net/http'
+require 'redis'
 require 'octokit'
 require 'git_diff_parser'
-require 'cgi'
-require 'net/http'
 require 'typhoeus'
 require 'typhoeus/cache/redis'
-require 'redis'
-require 'csv'
-require 'json'
-
-require 'pry'
-require 'benchmark'
 
 Dir[File.join(__dir__, 'lib', '**', '*.rb')].sort.each { |file| require file }
 
